@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -31,7 +32,7 @@
         </div>
         <div class="header-brand">
             <div class="header-logo">
-                <img src="assets/images/new-logo.jpg" alt="" class="header-img">
+                <img src="assets/images/new-logo.jpg" alt="" aria-hidden="true" class="header-img">
             </div>
             <div class="header-text">
                 <h1 class="header-title">G<span class="header-smallcaps">igi</span> C<span class="header-smallcaps">allé</span></h1>
@@ -40,62 +41,45 @@
         </div>
     </header>
     <main class="content">
-        <!-- Photo by Luca Onniboni on Unsplash | high tech bridge | gigi-hero.jpg  -->
+        <!-- Photo by Jessica Lewis from Pexels | 35mm and iPhone | gigi-hero1550.jpg  -->
         <section class="hero-section">
             <div class="hero-textbox">
                 <h3 class="hero-heading">Hallo ! <br>Mes amis m’appellent Gigi.</h3>
                 <p class="hero-descrip">Je suis une photographe professionnelle. J’aime la vie. La vie est belle.</p>
             </div>
         </section>
-        <section class="featured">
+        <section class="img-group">
             <h2 class="featured-heading">Galerie de photos</h2>
-<!--             <div> -->
+            <div class="featured-images">
                 <!-- Photo by Nadim Merrikh on Unsplash | street performance, female center -->
-                <picture>
-                    <source 
-                        media="(min-width: 300px)"
-                        sizes="100vw"
-                        srcset="https://res.cloudinary.com/dcs8kyezs/image/upload/c_scale,w_480/v1525977547/gigi-street-dance480_ehatfr.jpg 480w"
-                        type="image/webp">
+                <div class="media">
                     <img src="https://res.cloudinary.com/dcs8kyezs/image/upload/c_scale,w_480/v1525977547/gigi-street-dance480_ehatfr.jpg" alt="Modern dance performance in streets of Paris" class="responsive-img">
-                </picture>
-                <p class="img-category">Photos de danse</p>
-<!--             </div> -->
-<!--             <div> -->
-                <!-- Photo by Fran Boloni https://www.theparisphotographer.com/paris-elopement-katka-pierre/ | cafe couple, holding coffee cups, center align -->
-                <picture>
-                    <source 
-                        media="(min-width: 300px)"
-                        sizes="100vw"
-                        srcset="https://res.cloudinary.com/dcs8kyezs/image/upload/c_scale,w_480/v1525978853/gigi-cafe-couple-daytime-coffee480_e2zx7e.jpg 480w"
-                        type="image/webp">
+                </div>
+                    <p class="img-category">Photos de danse</p>
+
+                <!-- Photo by Fran Boloni https://www.theparisphotographer.com/paris-elopement-katka-pierre/ | cafe couple, holding coffee cups, center align -->                
+                <div class="media">
                     <img src="https://res.cloudinary.com/dcs8kyezs/image/upload/c_scale,w_480/v1525978853/gigi-cafe-couple-daytime-coffee480_e2zx7e.jpg" alt="Newlyweds enjoying coffee and croissants in Paris cafe" class="responsive-img">
-                </picture>
-                <p class="img-category">La ville en images</p>
-<!--             </div> -->
-<!--             <div> -->
+                </div>
+                    <p class="img-category">La ville en images</p>
+
                 <!-- Photo by Hermes Rivera on Unsplash | young boy, right align on blue -->
-                <picture>
-                    <source 
-                        media="(min-width: 300px)"
-                        sizes="100vw"
-                        srcset="https://res.cloudinary.com/dcs8kyezs/image/upload/c_scale,w_480/v1525979278/gigi-refugee-child480_rfddgr.jpg 480w"
-                        type="image/webp">
-                     <img src="https://res.cloudinary.com/dcs8kyezs/image/upload/c_scale,w_480/v1525979278/gigi-refugee-child480_rfddgr.jpg" alt="Young refugee boy with penetrating dark eyes" class="responsive-img">
-                </picture>
-                <p class="img-category">Portraits d’enfants</p>
-<!--             </div> -->
+                <div class="media">
+                    <img src="https://res.cloudinary.com/dcs8kyezs/image/upload/c_scale,w_480/v1525979278/gigi-refugee-child480_rfddgr.jpg" alt="refugee boy with penetrating dark eyes" class="responsive-img">
+                </div>
+                    <p class="img-category">Portraits d’enfants</p>
+            </div>
         </section>
         <footer class="footer">
-<!--             <div class="review-stars"> -->
-                <!-- https://en.wikipedia.org/wiki/File:5_stars.svg -->
-                <img src="assets/images/5-stars.png" alt="" class="review-stars">
-<!--             </div> -->
+            <!--             <div class="review-stars"> -->
+            <!-- https://en.wikipedia.org/wiki/File:5_stars.svg -->
+            <img src="assets/images/5-stars.png" alt="" class="review-stars">
+            <!--             </div> -->
             <p class="review-comment">Gigi est compétente et professionnelle ! Je vous la recommande 😊</p>
-<!--             <div class="review-stars"> -->
-                <!-- https://en.wikipedia.org/wiki/File:5_stars.svg -->
-                <img src="assets/images/5-stars.png" alt="" class="review-stars">
-<!--             </div> -->
+            <!--             <div class="review-stars"> -->
+            <!-- https://en.wikipedia.org/wiki/File:5_stars.svg -->
+            <img src="assets/images/5-stars.png" alt="" class="review-stars">
+            <!--             </div> -->
             <p class="review-comment">Les photos sont top. Photographe très pro ! <em>MERCI beaucoup !</em></p>
         </footer>
     </main>

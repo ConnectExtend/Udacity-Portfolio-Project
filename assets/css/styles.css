@@ -1,125 +1,261 @@
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
-    font-family: "Lato", sans-serif;
-    font-size: 16px;
+  background-color: #eee;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
 }
 
+
+/* Default */
+
 .responsive-img {
-    height: auto;
-    max-width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 .header,
-.featured,
+.img-group,
 .footer {
-    margin-bottom: 20px;
-    text-align: center;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .header-top {
-    background-color: #85aff2;
-    border-bottom: solid 3px #79a;
-    font-size: 4vw;
-    padding: 20px 0 15px;
+  background-color: #85aff2;
+  border-bottom: solid 3px #79a;
+  font-size: 4vw;
+  padding: 20px 0 15px;
 }
 
 .header-tel {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .fa-map-marker-alt {
-    color: red;
-    text-decoration-line: none;
+  color: #ce3833;
 }
 
 .header-brand {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 .header-img {
-    width: 15%;
+  width: 15%;
 }
 
 .header-title {
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 10vw;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 10vw;
 }
 
 .header-tagline {
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 5vw;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 5vw;
 }
 
 .header-smallcaps {
-    font-size: 0.75em;
-    letter-spacing: 0.01em;
-    padding-right: 5px;
-    text-transform: uppercase;
+  font-size: 0.75em;
+  letter-spacing: 0.01em;
+  padding-right: 5px;
+  text-transform: uppercase;
 }
 
 .hero-section {
-    background: #ccc url(https://res.cloudinary.com/dcs8kyezs/image/upload/c_scale,w_1550/v1525899072/gigi-hero_diigdj.jpg) center center / cover no-repeat;
-    border-bottom: solid 3px #79a;
-    border-top: solid 3px #79a;
-    height: calc(100vh - 350px);
-    margin-bottom: 20px;
-    opacity: 0.7;
-    overflow: hidden;
-    padding: 0px 50px;
+  background: #ccc url(https://res.cloudinary.com/dcs8kyezs/image/upload/c_scale,w_1550/v1526100854/gigi-hero1550.jpg) center center / cover no-repeat;
+  border-bottom: solid 3px #79a;
+  border-top: solid 3px #79a;
+  height: 325px;
+  margin-bottom: 20px;
+  opacity: 0.7;
+  overflow: hidden;
+  padding: 0 50px 0 40px;
 }
 
 .hero-textbox {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 3px 5px #9fbac7;
-    margin: 50px auto;
-    padding: 10px;
-    text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 5px #9fbac7;
+  margin: 140px 15px 0 0;
+  padding: 10px;
+  text-align: center;
 }
 
 .hero-heading {
-    color: #000;
-    font-size: 5vw;
-    font-style: italic;
-    font-weight: bold;
-    padding-bottom: 12px;
+  font-size: 5vw;
+  font-style: italic;
+  font-weight: bold;
+  padding-bottom: 12px;
 }
 
 .hero-descrip {
-	color: #000;
-    font-size: 4vw;
-    line-height: 1.25em;
-    padding-bottom: 5px;
+  font-size: 4vw;
+  line-height: 1.25em;
+  padding-bottom: 5px;
 }
 
 .featured-heading {
-    font-family: "Source Sans Pro", sans-serif;
-    padding-bottom: 10px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 6vw;
+  padding-bottom: 10px;
 }
 
 .img-category {
-    font-size: 4vw;
-    padding: 5px 0 35px;
+  font-size: 5vw;
+  padding: 5px 0 35px;
 }
 
 p.img-category:last-child {
-    padding: 5px 0;
+  padding: 5px 0;
 }
 
 .review-stars {
-    padding-top: 15px;
-    width: 30%;
+  padding-top: 15px;
+  width: 30%;
 }
 
 .review-comment {
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 3.5vw;
-    padding: 5px 0 15px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 3.5vw;
+  padding: 5px 0 15px;
+}
+
+
+/* Media Queries */
+
+@media screen and (min-width: 671px) {
+    .header-top {
+      font-size: 3vw;
+    }
+
+    .header-title {
+      font-size: 8vw;
+    }
+
+    .header-tagline {
+      font-size: 3.5vw;
+    }
+
+    .hero-section {
+      height: 425px;
+      padding: 0px 50px;
+    }
+
+    .hero-textbox {
+      box-shadow: 6px 8px #9fbac7;
+      margin: 100px auto;
+      width: 75%;
+      padding: 10px;
+    }
+
+    .hero-heading {
+      font-size: 4vw;
+      padding-bottom: 12px;
+    }
+
+    .hero-descrip {
+      font-size: 3vw;
+      padding: 0 25px 15px;
+    }
+
+    .featured-heading {
+      font-size: 5vw;
+    }
+
+    p.img-category:last-child {
+      padding: 15px 0;
+    }
+
+    .review-stars {
+      padding-top: 25px;
+      width: 25%;
+    }
+
+    .review-comment {
+      font-size: 3vw;
+      padding: 10px 0 15px;
+    }
+}
+
+@media screen and (min-width: 1021px) {
+    .header-top {
+      font-size: 3.5vw;
+      padding: 35px 0 25px;
+    }
+
+    .header-title {
+      font-size: 8.5vw;
+    }
+
+    .header-tagline {
+      font-size: 4vw;
+    }
+
+    .hero-section {
+      height: calc(80vh - 300px);
+    }
+
+    .hero-textbox {
+      box-shadow: 8px 10px #9fbac7;
+      padding: 35px 20px;
+    }
+
+    .hero-heading {
+      font-size: 4vw;
+      padding-bottom: 25px;
+    }
+
+    .hero-descrip {
+      font-size: 3.5vw;
+      padding: 0 20px 15px;
+    }
+
+    .featured-images {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+
+/*    .media {
+      margin: 5px;
+    }*/
+/*
+    .responsive-img {
+ width: 350px;
+ max-width: 100%; 
+ max-height: 100%; 
+    }*/
+
+    p.img-category {
+      font-size: 3vw;
+      padding: 5px 0 35px;
+    }
+
+.img-category {
+  font-size: 4vw;
+  padding: 5px 0 35px;
+}
+    p.img-category:last-child {
+      padding: 0;
+    }
+
+    .review-stars {
+      padding-top: 25px;
+      width: 25%;
+    }
+
+    .review-comment {
+      font-size: 3vw;
+      padding: 10px 0 15px;
+    }
 }
