@@ -7,25 +7,25 @@
 }
 
 a {
+  color: #000;
   text-decoration: none;
 }
 
 body {
-  background-color: #eee;
+  background-color: #fff;
   font-family: "Lato", sans-serif;
   font-size: 16px;
 }
 
-
 /* Default */
 
-.responsive-img {
+.featured-image {
   height: auto;
   max-width: 100%;
 }
 
 .header,
-.img-group,
+.cards,
 .footer {
   margin-bottom: 20px;
   text-align: center;
@@ -70,7 +70,7 @@ body {
 }
 
 .hero-section {
-  background: #ccc url(https://res.cloudinary.com/dcs8kyezs/image/upload/c_scale,w_1550/v1526100854/gigi-hero1550.jpg) center center / cover no-repeat;
+  background: url(https://res.cloudinary.com/dcs8kyezs/image/upload/c_scale,w_1550/v1526100854/gigi-hero1550.jpg) center center / cover no-repeat;
   border-bottom: solid 3px #79a;
   border-top: solid 3px #79a;
   height: 45vh;
@@ -106,15 +106,13 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 6vw;
   padding-bottom: 10px;
+  text-align: center;
 }
 
 .img-category {
   font-size: 5vw;
-  padding: 5px 0 35px;
-}
-
-p.img-category:last-child {
-  padding: 5px 0;
+  padding: 15px 0;
+  margin-bottom: 20px;
 }
 
 .review-stars {
@@ -197,29 +195,41 @@ p.img-category:last-child {
       font-size: 5vw;
     }
 
-    p.img-category:last-child {
-      padding: 15px 0;
-    }
-
-    .review-stars {
-      padding-top: 25px;
-      width: 25%;
-    }
-
     .review-comment {
-      font-size: 3vw;
-      padding: 10px 0 15px;
+      padding: 9px 0 9px;
     }
 }
 
+/* desktop */
 
 @media screen and (min-width: 800px) {
+    .featured-heading {
+      font-size: 4vw;
+      padding-left: 10px;
+      text-align: left;      
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+
+    .card {
+      flex: 0 1 32%;
+    }
+
+    .img-category {
+        font-size: 2.5vw;
+        padding: 10px 0;
+      }
 }
 
+/* desktop -- center align with fluid margins */
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
     .wrapper {
-      width: 1200px;
+      width: 1000px;
       margin: 0 auto;
     }
   }
