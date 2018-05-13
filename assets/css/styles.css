@@ -35,6 +35,7 @@ body {
   background-color: #85aff2;
   border-bottom: solid 3px #79a;
   font-size: 4vw;
+  margin-bottom: 10px;
   padding: 20px 0 15px;
 }
 
@@ -46,10 +47,6 @@ body {
   color: #ce3833;
 }
 
-.header-brand {
-  margin-top: 5px;
-}
-
 .header-img {
   width: 15%;
 }
@@ -57,6 +54,7 @@ body {
 .header-title {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 10vw;
+  margin-bottom: 0;
 }
 
 .header-tagline {
@@ -75,7 +73,7 @@ body {
   background: #ccc url(https://res.cloudinary.com/dcs8kyezs/image/upload/c_scale,w_1550/v1526100854/gigi-hero1550.jpg) center center / cover no-repeat;
   border-bottom: solid 3px #79a;
   border-top: solid 3px #79a;
-  height: 325px;
+  height: 45vh;
   margin-bottom: 20px;
   opacity: 0.7;
   overflow: hidden;
@@ -99,7 +97,7 @@ body {
 }
 
 .hero-descrip {
-  font-size: 4vw;
+  font-size: 3.75vw;
   line-height: 1.25em;
   padding-bottom: 5px;
 }
@@ -133,9 +131,37 @@ p.img-category:last-child {
 
 /* Media Queries */
 
-@media screen and (min-width: 671px) {
+
+/* minor breakpoint */
+@media screen and (min-width: 480px) {
+    .hero-section {
+/*      height: 50vh;*/
+      padding: 0 75px;
+    }
+
+    .hero-textbox {
+      margin: 155px 12px 0 0;
+    }
+
+    .hero-heading {
+      font-size: 4vw;
+      padding-bottom: 10px;
+    }
+
+    .hero-descrip {
+      font-size: 3.25vw;
+    }
+}
+
+/* tablet */
+
+@media screen and (min-width: 600px) {
     .header-top {
       font-size: 3vw;
+    }
+
+    .header-img {
+       width: 12%;
     }
 
     .header-title {
@@ -143,17 +169,16 @@ p.img-category:last-child {
     }
 
     .header-tagline {
-      font-size: 3.5vw;
+      font-size: 3.75vw;
     }
 
     .hero-section {
-      height: 425px;
-      padding: 0px 50px;
+      height: 50vh;
+      padding: 0 60px 0 30px;
     }
 
     .hero-textbox {
-      box-shadow: 6px 8px #9fbac7;
-      margin: 100px auto;
+      margin: 140px auto;
       width: 75%;
       padding: 10px;
     }
@@ -165,7 +190,7 @@ p.img-category:last-child {
 
     .hero-descrip {
       font-size: 3vw;
-      padding: 0 25px 15px;
+      padding: 0 15px 5px;
     }
 
     .featured-heading {
@@ -187,75 +212,14 @@ p.img-category:last-child {
     }
 }
 
-@media screen and (min-width: 1021px) {
-    .header-top {
-      font-size: 3.5vw;
-      padding: 35px 0 25px;
-    }
 
-    .header-title {
-      font-size: 8.5vw;
-    }
-
-    .header-tagline {
-      font-size: 4vw;
-    }
-
-    .hero-section {
-      height: calc(80vh - 300px);
-    }
-
-    .hero-textbox {
-      box-shadow: 8px 10px #9fbac7;
-      padding: 35px 20px;
-    }
-
-    .hero-heading {
-      font-size: 4vw;
-      padding-bottom: 25px;
-    }
-
-    .hero-descrip {
-      font-size: 3.5vw;
-      padding: 0 20px 15px;
-    }
-
-    .featured-images {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-    }
-
-/*    .media {
-      margin: 5px;
-    }*/
-/*
-    .responsive-img {
- width: 350px;
- max-width: 100%; 
- max-height: 100%; 
-    }*/
-
-    p.img-category {
-      font-size: 3vw;
-      padding: 5px 0 35px;
-    }
-
-.img-category {
-  font-size: 4vw;
-  padding: 5px 0 35px;
+@media screen and (min-width: 800px) {
 }
-    p.img-category:last-child {
-      padding: 0;
-    }
 
-    .review-stars {
-      padding-top: 25px;
-      width: 25%;
-    }
 
-    .review-comment {
-      font-size: 3vw;
-      padding: 10px 0 15px;
+@media screen and (min-width: 1200px) {
+    .wrapper {
+      width: 1200px;
+      margin: 0 auto;
     }
-}
+  }
