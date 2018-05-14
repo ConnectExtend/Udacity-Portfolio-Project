@@ -36,7 +36,7 @@
                     <img src="assets/images/new-logo.jpg" alt="" aria-hidden="true" class="header-img">
                 </div>
                 <div class="header-text">
-                    <h1 class="header-title">G<span class="header-smallcaps">igi</span> C<span class="header-smallcaps">allé</span></h1>
+                    <h1 class="header-title">G<span class="header-smallcaps">igi</span>C<span class="header-smallcaps">allé</span></h1>
                     <p class="header-tagline">La vie est belle</p>
                 </div>
             </div>
@@ -50,13 +50,11 @@
                         <br>J’aime la vie. La vie est belle.</p>
                 </div>
             </section>
-
-            <h2 class="featured-heading">Galerie de photos</h2>
+            <h2 class="featured-heading">Galerie de images</h2>
             <section class="cards">
-
-                <article class="card">
+                <div class="card">
                     <a href="#">
-                        <picture>
+                        <picture class="img-group">
                             <!-- Photo by Nadim Merrikh on Unsplash | street performance, female center -->
                             <img src="http://res.cloudinary.com/dcs8kyezs/image/upload/c_scale,w_800/v1526245085/gigi-street-dance_800.jpg" alt="Modern dance performance in streets of Paris" class="featured-image">
                         </picture>
@@ -64,10 +62,10 @@
                             <p class="img-category">Photos de danse</p>
                         </div>
                     </a>
-                </article>
-                <article class="card">
+                </div>
+                <div class="card">
                     <a href="#">
-                        <picture>
+                        <picture class="img-group">
                             <!-- Photo by Fran Boloni www.theparisphotographer.com/paris-elopement-katka-pierre/ | cafe couple, holding coffee cups, center align -->
                             <img src="https://res.cloudinary.com/dcs8kyezs/image/upload/c_crop,h_533,w_800/v1526246611/gigi-cafe-couple-800.jpg" alt="Newlyweds enjoying coffee and croissants in Paris cafe" class="featured-image">
                         </picture>
@@ -75,10 +73,10 @@
                             <p class="img-category">La ville en images</p>
                         </div>
                     </a>
-                </article>
-                <article class="card">
+                </div>
+                <div class="card">
                     <a href="#">
-                        <picture>
+                        <picture class="img-group">
                             <!-- Photo by Hermes Rivera on Unsplash | young boy, right align on blue -->
                             <img src="https://res.cloudinary.com/dcs8kyezs/image/upload/c_scale,w_800/v1526246337/gigi-refugee-child_800.jpg" alt="Refugee boy with penetrating dark eyes" class="featured-image">
                         </picture>
@@ -86,18 +84,14 @@
                             <p class="img-category">Portraits d’enfants</p>
                         </div>
                     </a>
-                </article>
+                </div>
             </section>
             <footer class="footer">
-                <!--             <div class="review-stars"> -->
                 <!-- https://en.wikipedia.org/wiki/File:5_stars.svg -->
                 <img src="assets/images/5-stars.png" alt="rating of 5 of 5 stars" class="review-stars">
-                <!--             </div> -->
-                <p class="review-comment">Gigi est compétente et professionnelle ! Je vous la recommande 😊</p>
-                <!--             <div class="review-stars"> -->
+                <p class="review-comment">Gigi est compétente et professionnelle ! Je vous la recommande.</p>
                 <!-- https://en.wikipedia.org/wiki/File:5_stars.svg -->
                 <img src="assets/images/5-stars.png" alt="rating of 5 of 5 stars" class="review-stars">
-                <!--             </div> -->
                 <p class="review-comment">Les photos sont top. Photographe très pro ! <em>MERCI beaucoup !</em></p>
             </footer>
         </main>
@@ -105,3 +99,8 @@
 </body>
 
 </html>
+
+<!-- TODO 
+// improve load speed of hero image 
+// add srcset 
+// for largest viewport (mostly fluid design pattern), allow outer margins to be slightly darker color -->

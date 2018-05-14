@@ -1,129 +1,144 @@
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 a {
-  color: #000;
-  text-decoration: none;
+    color: #000;
+    text-decoration: none;
 }
 
 body {
-  background-color: #fff;
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
+    background-color: #fff;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
 }
+
+
 
 /* Default */
 
 .featured-image {
-  height: auto;
-  max-width: 100%;
+    height: auto;
+    max-width: 100%;
 }
 
 .header,
 .cards,
 .footer {
-  margin-bottom: 20px;
-  text-align: center;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .header-top {
-  background-color: #85aff2;
-  border-bottom: solid 3px #79a;
-  font-size: 4vw;
-  margin-bottom: 10px;
-  padding: 20px 0 15px;
+    background-color: #85aff2;
+    border-bottom: solid 3px #79a;
+    font-size: 4vw;
+    margin-bottom: 10px;
+    padding: 20px 0 15px;
 }
 
 .header-tel {
-  padding-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 .fa-map-marker-alt {
-  color: #ce3833;
+    color: #ce3833;
 }
 
 .header-img {
-  width: 15%;
+    width: 15%;
 }
 
 .header-title {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 10vw;
-  margin-bottom: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 10vw;
+    margin-left: 8px;
 }
 
 .header-tagline {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 5vw;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 5vw;
 }
 
 .header-smallcaps {
-  font-size: 0.75em;
-  letter-spacing: 0.01em;
-  padding-right: 5px;
-  text-transform: uppercase;
+    font-size: 0.75em;
+    letter-spacing: 0.01em;
+    padding-right: 6px;
+    text-transform: uppercase;
 }
 
 .hero-section {
-  background: url(https://res.cloudinary.com/dcs8kyezs/image/upload/c_scale,w_1550/v1526100854/gigi-hero1550.jpg) center center / cover no-repeat;
-  border-bottom: solid 3px #79a;
-  border-top: solid 3px #79a;
-  height: 45vh;
-  margin-bottom: 20px;
-  opacity: 0.7;
-  overflow: hidden;
-  padding: 0 50px 0 40px;
+    background-image: url(https://res.cloudinary.com/dcs8kyezs/image/upload/c_scale,w_1550/v1526100854/gigi-hero1550.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 0 10% 0 15%;
+    position: relative;
+    width: 100%;
 }
 
+
+/* Flexbox */
+
 .hero-textbox {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 3px 5px #9fbac7;
-  margin: 140px 15px 0 0;
-  padding: 10px;
-  text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 5px #9fbac7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50% auto 10%;
+    padding: 10px 0;
+    text-align: center;
 }
 
 .hero-heading {
-  font-size: 5vw;
-  font-style: italic;
-  font-weight: bold;
-  padding-bottom: 12px;
+    font-size: 5vw;
+    font-style: italic;
+    font-weight: bold;
+    padding-bottom: 12px;
 }
 
 .hero-descrip {
-  font-size: 3.75vw;
-  line-height: 1.25em;
-  padding-bottom: 5px;
+    font-size: 3.75vw;
+    line-height: 1.25em;
+    padding-bottom: 5px;
 }
 
 .featured-heading {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 6vw;
-  padding-bottom: 10px;
-  text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 6vw;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+a:hover {
+    border-bottom: solid 3px #9fbac7;
+    color: #000;
+    font-weight: bold;
 }
 
 .img-category {
-  font-size: 5vw;
-  padding: 15px 0;
-  margin-bottom: 20px;
+    font-size: 5vw;
+    margin-bottom: 20px;
+    padding: 10px 0;
 }
 
 .review-stars {
-  padding-top: 15px;
-  width: 30%;
+    padding-top: 15px;
+    width: 30%;
 }
 
 .review-comment {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 3.5vw;
-  padding: 5px 0 15px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 3.5vw;
+    padding: 5px 0 15px;
 }
 
 
@@ -132,104 +147,154 @@ body {
 
 /* minor breakpoint */
 @media screen and (min-width: 480px) {
-    .hero-section {
-/*      height: 50vh;*/
-      padding: 0 75px;
-    }
-
-    .hero-textbox {
-      margin: 155px 12px 0 0;
+    .header-img {
+        width: 12%;
     }
 
     .hero-heading {
-      font-size: 4vw;
-      padding-bottom: 10px;
+        font-size: 4vw;
+        padding-bottom: 10px;
     }
 
     .hero-descrip {
-      font-size: 3.25vw;
+        font-size: 3.25vw;
     }
 }
+
+
 
 /* tablet */
 
 @media screen and (min-width: 600px) {
     .header-top {
-      font-size: 3vw;
-    }
-
-    .header-img {
-       width: 12%;
+        font-size: 3vw;
     }
 
     .header-title {
-      font-size: 8vw;
+        font-size: 8vw;
     }
 
     .header-tagline {
-      font-size: 3.75vw;
-    }
-
-    .hero-section {
-      height: 50vh;
-      padding: 0 60px 0 30px;
-    }
-
-    .hero-textbox {
-      margin: 140px auto;
-      width: 75%;
-      padding: 10px;
+        font-size: 4vw;
     }
 
     .hero-heading {
-      font-size: 4vw;
-      padding-bottom: 12px;
+        font-size: 4vw;
+        padding-bottom: 12px;
     }
 
     .hero-descrip {
-      font-size: 3vw;
-      padding: 0 15px 5px;
+        font-size: 3vw;
+        padding: 0 15px 5px;
     }
 
     .featured-heading {
-      font-size: 5vw;
+        font-size: 5vw;
+    }
+
+    .img-category {
+        font-size: 4.5vw;
+        padding: 8px 0;
+    }
+
+    .review-stars {
+        width: 25%;
     }
 
     .review-comment {
-      padding: 9px 0 9px;
+        font-size: 3.5vw;
+        padding: 9px 0 9px;
     }
 }
 
-/* desktop */
+
+
+/* desktop - Flexbox */
 
 @media screen and (min-width: 800px) {
+    .header-img {
+        width: 10%;
+    }
+
     .featured-heading {
-      font-size: 4vw;
-      padding-left: 10px;
-      text-align: left;      
+        font-size: 4vw;
     }
 
     .cards {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: space-between;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-bottom: 5px;
     }
 
     .card {
-      flex: 0 1 32%;
+        flex: 0 1 32%;
     }
 
     .img-category {
         font-size: 2.5vw;
-        padding: 10px 0;
-      }
+        padding: 8px 0;
+    }
+
+    .review-stars {
+        width: 20%;
+    }
+
+    .review-comment {
+        font-size: 3vw;
+    }
 }
 
-/* desktop -- center align with fluid margins */
+
+
+/* desktop, center align with fluid margins */
 
 @media screen and (min-width: 1000px) {
     .wrapper {
-      width: 1000px;
-      margin: 0 auto;
+        margin: 0 auto;
+        width: 1000px;
     }
-  }
+
+    .header-top {
+        font-size: 32px;
+    }
+
+    .header-img {
+        width: 100px;
+    }
+
+    .header-title {
+        font-size: 90px;
+        margin-bottom: 0;
+    }
+
+    .header-tagline {
+        font-size: 45px;
+    }
+
+    .hero-heading {
+        font-size: 42px;
+    }
+
+    .hero-descrip {
+        font-size: 37px;
+        padding-bottom: 8px;
+    }
+
+    .featured-heading {
+        font-size: 48px;
+    }
+
+    .img-category {
+        font-size: 30px;
+    }
+
+    .review-stars {
+        padding-top: 15px;
+        width: 25%;
+    }
+
+    .review-comment {
+        font-size: 35px;
+    }
+}
