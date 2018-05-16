@@ -11,17 +11,11 @@ a {
     text-decoration: none;
 }
 
-a[href^="tel:"]::before {
-    content: "\260e";
-    margin-right: 0.5em;
-}
-
 body {
     background-color: #fff;
     font-family: "Lato", sans-serif;
     font-size: 16px;
 }
-
 
 
 /* Default */
@@ -46,12 +40,28 @@ body {
     padding: 20px 0 15px;
 }
 
+a[href^="tel:"]::before {
+    content: "\260e";
+    margin-right: 0.5em;
+}
+
 .header-tel {
     padding-bottom: 10px;
 }
 
 .fa-map-marker-alt {
     margin-right: 0.5em;
+}
+
+a:hover {
+    border-bottom: solid 3px #9fbac7;
+    color: #000;
+    font-weight: bold;
+}
+
+.header-tel a:hover,
+.header-map a:hover {
+    border-bottom: 0;
 }
 
 .header-img {
@@ -89,7 +99,6 @@ body {
 }
 
 
-
 /* Flexbox */
 
 .hero-textbox {
@@ -124,12 +133,6 @@ body {
     text-align: center;
 }
 
-a:hover {
-    border-bottom: solid 3px #9fbac7;
-    color: #000;
-    font-weight: bold;
-}
-
 .img-category {
     font-size: 5vw;
     margin-bottom: 20px;
@@ -146,7 +149,6 @@ a:hover {
     font-size: 3.5vw;
     padding: 5px 0 15px;
 }
-
 
 
 /* Media Queries */
@@ -168,8 +170,6 @@ a:hover {
         font-size: 3.25vw;
     }
 }
-
-
 
 
 /* tablet */
@@ -217,8 +217,6 @@ a:hover {
 }
 
 
-
-
 /* desktop - Flexbox */
 
 @media screen and (min-width: 800px) {
@@ -254,8 +252,6 @@ a:hover {
         font-size: 3vw;
     }
 }
-
-
 
 
 /* desktop, center align with fluid margins */
