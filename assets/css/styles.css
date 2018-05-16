@@ -6,9 +6,15 @@
     padding: 0;
 }
 
-a {
+.header-tel a,
+.header-map a {
     color: #000;
     text-decoration: none;
+}
+
+a[href^="tel:"]::before {
+    content: "\260e";
+    margin-right: 0.5em;
 }
 
 body {
@@ -46,7 +52,7 @@ body {
 }
 
 .fa-map-marker-alt {
-    color: #ce3833;
+    margin-right: 0.5em;
 }
 
 .header-img {
@@ -84,10 +90,11 @@ body {
 }
 
 
+
 /* Flexbox */
 
 .hero-textbox {
-    background-color: white;
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 3px 5px #9fbac7;
     display: flex;
@@ -142,10 +149,12 @@ a:hover {
 }
 
 
+
 /* Media Queries */
 
 
 /* minor breakpoint */
+
 @media screen and (min-width: 480px) {
     .header-img {
         width: 12%;
@@ -160,6 +169,7 @@ a:hover {
         font-size: 3.25vw;
     }
 }
+
 
 
 
@@ -209,6 +219,7 @@ a:hover {
 
 
 
+
 /* desktop - Flexbox */
 
 @media screen and (min-width: 800px) {
@@ -244,6 +255,7 @@ a:hover {
         font-size: 3vw;
     }
 }
+
 
 
 
