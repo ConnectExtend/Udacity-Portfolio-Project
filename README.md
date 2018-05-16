@@ -4,7 +4,7 @@ View project [here](https://connectextend.github.io/Udacity-Portfolio-Project/).
 ### Points of pride:
 - Mobile-First approach!
 - link to Google Maps works!
-- Phone number is clickable! (number has been modified in the markup, so that it's not a valid number)
+- phone number is clickable! (number has been modified in the markup, so that it's not a valid number)
 - `vw` used for font-size! (except at final viewport due to need to "freeze" font-size, so would not grow unreasonably large with increasing viewports)
 - Flexbox!
 - clean, organized Markup and CSS!
