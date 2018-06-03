@@ -1,5 +1,5 @@
 ## Udacity-Portfolio-Project
-View project [here](https://connectextend.github.io/Udacity-Portfolio-Project/).
+[I invite you to view the project here.](https://connectextend.github.io/Udacity-Portfolio-Project/)
 
 ### Points of pride:
 - Mobile-First approach!
@@ -17,7 +17,7 @@ View project [here](https://connectextend.github.io/Udacity-Portfolio-Project/).
 
 ### Areas that need improvement:
 - hero image loads much too slowly
-- need to increase knowledge of images, especially how to manipulate vertical sizing and how to implement srcset
+- need to increase knowledge of images, especially how to manipulate vertical sizing and how to implement `srcset`
 - unsure of how to use `srcset` with Flexbox
 - for the largest viewport (mostly fluid design pattern), want to allow outer margins to be slightly darker color
 #### Thank you for your time. I welcome all feedback - minor and major! : )
