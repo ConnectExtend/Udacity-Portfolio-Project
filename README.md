@@ -1,5 +1,5 @@
 ## Udacity-Portfolio-Project
-[I invite you to view the project here.](https://connectextend.github.io/Udacity-Portfolio-Project/)
+[Click here to view portfolio.](https://connectextend.github.io/Udacity-Portfolio-Project/)
 
 ### Points of pride:
 - Mobile-First approach!
@@ -20,4 +20,5 @@
 - need to increase knowledge of images, especially how to manipulate vertical sizing and how to implement `srcset`
 - unsure of how to use `srcset` with Flexbox
 - for the largest viewport (mostly fluid design pattern), want to allow outer margins to be slightly darker color
-#### Thank you for your time. I welcome all feedback - minor and major! : )
+
+#### Thank you for your time. I welcome all feedback - minor and major!
